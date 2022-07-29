@@ -1,6 +1,7 @@
 public abstract class Conta {
   protected static final int AGENCIA_PADRAO = 1;
   protected static int SEQUENCIAL = 1;
+  protected String tipo;
 
   protected int agencia;
   protected int numero;
@@ -37,8 +38,8 @@ public abstract class Conta {
   }
 
   public void imprimirExtrato() {
-    System.out.println(String.format("Agência: %d", this.agencia));
-    System.out.println(String.format("Número: %d", this.numero));
+    System.out.println(String.format("Agencia: %d", this.agencia));
+    System.out.println(String.format("Numero: %d", this.numero));
     System.out.println(String.format("Saldo: %.2f", this.saldo));
 
   }

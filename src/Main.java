@@ -12,5 +12,11 @@ public class Main {
     cc.imprimirExtrato();
     cc2.imprimirExtrato();
     poupanca.imprimirExtrato();
+
+    Banco banco = new Banco("Santander");
+    banco.adicionarConta(cc);
+    banco.adicionarConta(cc2);
+    banco.adicionarConta(poupanca);
+    banco.imprimeContas();
   }
 }

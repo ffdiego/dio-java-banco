@@ -2,6 +2,7 @@ public class ContaCorrente extends Conta {
 
   public ContaCorrente() {
     super();
+    this.tipo = "Corrente";
   }
 
   @Override
